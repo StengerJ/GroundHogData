@@ -14,7 +14,8 @@
 <br/>
 
 <h2>Box plot of Percipitation Difference equation>/h2>
-  <img src'PercipitationPlot.png' alt='Plot'/>
+  <img src"PercipitationPlot.png" alt="Plot"/>
+  
 <h3>Free use and prospective use cases</h3>
 <p>
   You are free to use the data but I am not responsible for any negligable outcomes or misuse of the data as stated in the license all data and scripts are open-sourced but do not come with any warranty or guarentee. <br/>
