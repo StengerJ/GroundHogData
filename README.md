@@ -1,22 +1,43 @@
-<h1> Groundhog day project</h1>
+# Groundhog Day Project
 
-<h2>Data</h2>
-<p>
-  The data included in this repo is in the csv files. <br/>
-  The copy does not include an additional computed collumn of the difference in rainfall and snowfall in liquid approximated form using a 1:10 conversion.
-</p>
-<br/>
-<h2>How to use the data</h2>
-<p> 
-  I myself used this data to compile a very short statistical analysis of whether Phil predicts the correct prediction of Early spring or More winter. <br/>
-  The metric defined in the non-copy version of the CSV is what I used as a mean for a two sample t-test.
-</p>
-<br/>
+This repository contains a Groundhog Day weather dataset and supporting files used for a statistics project at Duquesne University.
 
-<h2>Box plot of Percipitation Difference equation>/h2>
-  <img src"PercipitationPlot.png" alt="Plot"/>
-  
-<h3>Free use and prospective use cases</h3>
-<p>
-  You are free to use the data but I am not responsible for any negligable outcomes or misuse of the data as stated in the license all data and scripts are open-sourced but do not come with any warranty or guarentee. <br/>
-</p>
+## Data
+
+The repository includes two CSV files:
+
+- `groundhog_pittsburgh_weather.csv`  
+  Includes the computed **Percip Diff** column.
+
+- `groundhog_pittsburgh_weather copy.csv`  
+  Does not include the computed **Percip Diff** column.
+
+### Percip Diff Definition
+
+**Percip Diff** is defined as:
+
+Rainfall Total - (Snowfall Total / 10)
+
+This uses a 10:1 snowfall-to-water approximation to combine rainfall and snowfall into a single metric.
+
+## Project Use
+
+I used this dataset to perform a statistical analysis of whether Punxsutawney Phil's prediction is associated with different weather outcomes in Pittsburgh during the six weeks after Groundhog Day.
+
+The main variable used in the analysis was **Percip Diff**, which was analyzed with a two-sample t-test.
+
+## Box Plot of Percipitation Difference
+
+![Box plot of Percipitation Difference](./PercipitationPlot.png)
+
+## Reuse
+
+You are free to use the data in this repository. As stated in the license, all files are open source and provided without warranty.
+
+## About
+
+This repository was created for a statistics class project at Duquesne University. The data was collected from a groundhog prediction website and from weather data gathered using a custom Python script that queries a weather API.
+
+## License
+
+MIT License
